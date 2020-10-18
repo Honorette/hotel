@@ -1,0 +1,244 @@
+
+    /*reset*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+a{
+  color:#333;
+  text-decoration: none;
+}
+h1,h2,h3{
+  padding-bottom: 20px;
+}
+p{
+  margin:10px 0;  /* ??????*/
+}
+/*utility classes*/
+.container{
+  margin:auto; 
+  max-width:1100px; /*reason of this max width ????* and difference btn width&maxwidth??? */
+  overflow:auto;    /*when it's width:1100px there will be down and up also the right scrorbar bcz some of elements will not be shown but on max-width there is no down and up scrorbar */
+  padding:0 20px;
+}
+.text-primary{   
+  color:#ffc08a;  /*why they come and put it here ??? */
+}
+
+.lead{
+font-size:20px;  
+}
+.btn {
+  display:inline-block;
+  font-size:18px;
+  color:#fff;
+  background:#333;
+  padding:13px 20px;
+  border:none;
+  cursor:pointer;
+}
+.btn:hover{
+  background:#f7c08a;
+  color:#333;
+}
+.btn-light{
+  background:#f4f4f4 ;
+  color:#333;
+}
+.bg-dark{
+  background:#333;
+  color:#f4f4f4;
+}
+.bg-light{
+  background:#f4f4f4;
+  color:#333;
+}
+.bg-primary{
+  background:#f7c08a;
+  color:#333;
+}
+.clr{
+  clear: both;  /* i dont understant the reason of this clear cause it pushes the text down*/
+}
+
+.l-heading{
+  font-size:40px;
+}
+
+/*padding*/
+.py-1{padding: 10px 0;}
+.py-2{padding:20px 0;}
+.py-3{padding:30px 0;}
+
+
+
+
+/*navbar*/
+#navbar{
+  background:#333;
+  color:#fff;
+  overflow:auto;
+}
+#navbar a{
+  color:#fff;
+}
+#navbar h1 {
+  float:left;
+  padding-top: 20px;
+}
+#navbar ul{
+  list-style: none;
+  float:right;
+} 
+#navbar ul li{
+  float:left;
+}
+#navbar ul li a {
+  display:block; /*  why is it displayed block?????* made links to make padding-top */
+padding:20px;
+text-align:center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background:#444;
+  color:#f7c08a;
+}   
+/*showcase*/
+#showcase {
+ background:url('../img/Bothy-Suite-1.jpg') no-repeat center center/cover; /* center center makes all image shown& cover covers all the space since we are in the folder called css and we want to take an image in another folder called img we will not use ./(cause this means current folder. so since we go out of folder we will use ../ */
+ height:600px; /*so as to increase height of our showcase*/
+}
+#showcase .showcase-content {
+  color:#fff;
+  text-align:center;
+  padding-top: 170px;
+}
+#showcase .showcase-content h1{
+ font-size:60px; 
+ line-height:1.2em;
+}
+#showcase .showcase-content p{
+  padding-bottom: 10px;
+  line-height:1.5em;
+}
+/*home-info*/
+#home-info{
+  height:400px;
+  
+}
+#home-info .info-img{
+  float:left;
+  width:50%;
+  background: url('../img/hotel-header.jpg') no-repeat ; /* why didn't we use cover here????*/
+  min-height:100%;  /* difference btn min height and height ???*/
+}
+#home-info .info-content{
+  float:right;
+  width:50%;
+  height:100%;
+  text-align:center;
+  padding:50px 30px;
+  overflow:hidden; /* eventhough it goes out there is no scrorbar ??? */
+}
+/*.info-content{
+  background: #333;
+  color:#f4f4f4;
+} */
+#home-info .info-content p{
+  padding-bottom:30px;
+}
+/*feature*/
+.box{
+  float:left;
+  width: 33.3%;
+  text-align: center;
+  padding:50px; /*makes space btn those words in boxclass*/
+}
+ /*about */
+#about-info .info-right {
+   float:right;
+   width: 50%;
+   min-height: 100%; /* 100% of what??????*/
+  } 
+  
+#about-info .info-right img {
+    display:block;
+    margin:auto;
+    width:70%;  /* size of the image if you put like 200% the image will be big and bring the scorbar on the bottom of this section so that we can see the right side that is  why this 70% 70% of what?????*/
+    border-radius: 50%; /* if you put 50px the radius will come to the edge only */
+  }
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;/* 100% of it's content like where the words reach, where the picture occupies,...??????*/
+
+}
+ 
+/*testimonials*/
+#testimonials {
+  height:100%; /* it was 600px  100% of what????*/
+  background: url('../img/new.jpg') no-repeat center center/cover;
+  padding-top: 100px; /*why this padding on testimonial not on container cause makes space btn words and imgbackground*/
+}
+
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+  padding:20px; /*why did it remove the line btn these to divs????*/
+  margin-bottom: 40px;
+  border-radius:5px;
+  opacity: 0.9; /* makes the elements more transparent the lower the number the higher the transparences..*/
+}
+
+
+#testimonials .testimonial img {
+  width:100px; /*the makes the image to be small and makes the testimonial have small size*/
+  float:left; /*makes the img go on left side while it was on the top */
+  margin-right: 20px; /* why they use margin here instead of padding???*/
+  border-radius: 50%;
+}
+
+/*contact-form*/
+#contact-form .form-group {
+  margin-bottom: 20px; /*  also padding work why not padding bottom???*/
+}
+
+#contact-form label {  /* why didnt we put .formgroup??   why label not put in the utility class???*/
+  display: block;
+  margin-bottom: 5px;  /* we use padding also work why cant we use padding???*/
+}
+
+#contact-form input,
+#contact-form textarea{
+  width:100%;
+  padding:10px; /*increases the wideness of the boxes*/
+  border:1px solid #ddd;
+}
+
+#contact-form textarea {
+  height:200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+  outline:none;  /*they are used together*/
+  border-color: #ffc08a;
+}
+
+/*footer*/
+ #main-footer {          /*why do i have remaining space after the footer ????*/
+   text-align: center;
+   background:#444;
+   color: #f4f4f4;
+   padding: 20px;
+ }

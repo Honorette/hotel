@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel BT|Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">HBT</a></h1>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a  href="about.html">about</a></li>
+          <li><a class="current" href="contact.html">contact</a></li>
+        </ul> 
+      </div>
+    </nav> 
+  </header>
+
+  <section id="contact-form" class="py-3"> <!-- py is it done only when we have words????-->
+    <div class="container">
+      <h1 class="l-heading"><span class="text-primary">contact</span> us</h1>
+      <p>please fill out the form below to contact us</p>
+      <form action="process.php"> <!-- the form will go somewhere????-->
+         <div class="form-group">
+           <label for="name">name</label>
+             <input type="text" name="name" id="name">
+         </div>   
+             <div class="form-group">
+           <label for="email">email</label> <!-- <input type="email" name="email" id="email"> why is the input type not text??? -->
+           <input type="email" name="email" id="email">
+          </div>
+          <div class="form-group">
+           <label for="message">message</label>
+             <textarea  name="message" id="message"></textarea>
+            </div>   
+         
+         <button type="submit" class="btn" >submit</button>
+         
+      </form>
+    </div>
+  </section>
+
+  <section id="contact-info" class="bg-dark">
+    <div class="container">
+      <div class="box">
+        <h3>location </h3>
+        <p>50 main st boston</p>
+      </div>
+      <div class="box">
+        <h3>phone number</h3>
+        <p>555 5555</p>
+      </div>
+      <div class="box">
+        <h3>email address </h3>
+        <p>front@hotel.co</p>
+      </div>
+    </div>
+  </section>
+  
+  
+ <footer id="main-footer">
+    <p>hotel BT &copy; all rights are reserved</p>
+  </footer> 
+</body> 
+</html>
